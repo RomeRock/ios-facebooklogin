@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Reveal View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SWRevealViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <segue destination="O1t-h0-Nyv" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="cxi-7b-Inn"/>
+                        <segue destination="Y5b-fA-7LP" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="nVO-mb-W63"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qqy-K7-gdX">
+            <objects>
+                <navigationController id="Y5b-fA-7LP" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="dkN-io-713">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.090196078430000007" green="0.69019607839999997" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="VjB-cN-Wux" kind="relationship" relationship="rootViewController" id="wfr-sk-kId"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wDL-E9-zmb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="964" y="124"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="Qts-yy-Lam">
+            <objects>
+                <viewController id="VjB-cN-Wux" customClass="HomeViewController" customModule="FacebookLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gim-lI-czH"/>
+                        <viewControllerLayoutGuide type="bottom" id="n9D-FE-gVa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SEZ-KL-pod">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OUf-MA-FXx">
+                                <rect key="frame" x="16" y="592" width="343" height="50"/>
+                                <color key="backgroundColor" red="0.090196078430000007" green="0.69019607839999997" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginButtonPressed:" destination="VjB-cN-Wux" eventType="touchUpInside" id="bUs-OJ-LeX"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ddE-Ow-rGh">
+                                <rect key="frame" x="16" y="80" width="343" height="491"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USER INFO:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kzf-TI-Kq9">
+                                        <rect key="frame" x="133" y="34" width="76.5" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.31764705879999999" green="0.31764705879999999" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qqs-Cb-5dW">
+                                        <rect key="frame" x="128" y="57" width="87" height="2"/>
+                                        <color key="backgroundColor" red="0.090196078430000007" green="0.69019607839999997" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="87" id="17u-Xh-tQM"/>
+                                            <constraint firstAttribute="height" constant="2" id="grD-yS-sLU"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Qqs-Cb-5dW" firstAttribute="centerX" secondItem="ddE-Ow-rGh" secondAttribute="centerX" id="6Qe-kO-H3K"/>
+                                    <constraint firstItem="Kzf-TI-Kq9" firstAttribute="top" secondItem="ddE-Ow-rGh" secondAttribute="top" constant="34" id="GuP-4e-h8j"/>
+                                    <constraint firstItem="Qqs-Cb-5dW" firstAttribute="top" secondItem="Kzf-TI-Kq9" secondAttribute="bottom" constant="6" id="Tya-xb-xOE"/>
+                                    <constraint firstItem="Kzf-TI-Kq9" firstAttribute="centerX" secondItem="ddE-Ow-rGh" secondAttribute="centerX" id="Wam-q8-h7Q"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_romerock_logo_gray" translatesAutoresizingMaskIntoConstraints="NO" id="bfO-Yo-lPU">
+                                <rect key="frame" x="138" y="532" width="99" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="hFu-6j-L3p"/>
+                                    <constraint firstAttribute="width" constant="99" id="zlL-IA-kDY"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.95294117647058818" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="bfO-Yo-lPU" firstAttribute="centerX" secondItem="ddE-Ow-rGh" secondAttribute="centerX" id="Hwt-31-EPl"/>
+                            <constraint firstItem="n9D-FE-gVa" firstAttribute="top" secondItem="OUf-MA-FXx" secondAttribute="bottom" constant="25" id="JJ7-pu-0Mt"/>
+                            <constraint firstItem="ddE-Ow-rGh" firstAttribute="bottom" secondItem="bfO-Yo-lPU" secondAttribute="bottom" constant="23" id="NCw-L6-cgJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OUf-MA-FXx" secondAttribute="trailing" id="Nd3-Nt-Q1u"/>
+                            <constraint firstItem="OUf-MA-FXx" firstAttribute="top" secondItem="ddE-Ow-rGh" secondAttribute="bottom" constant="21" id="QPI-Zg-SYp"/>
+                            <constraint firstItem="ddE-Ow-rGh" firstAttribute="top" secondItem="gim-lI-czH" secondAttribute="bottom" constant="16" id="Rae-WL-Nu0"/>
+                            <constraint firstItem="OUf-MA-FXx" firstAttribute="leading" secondItem="SEZ-KL-pod" secondAttribute="leadingMargin" id="dTJ-B9-5Y3"/>
+                            <constraint firstItem="ddE-Ow-rGh" firstAttribute="leading" secondItem="SEZ-KL-pod" secondAttribute="leadingMargin" id="gWd-qo-V8s"/>
+                            <constraint firstItem="OUf-MA-FXx" firstAttribute="height" secondItem="SEZ-KL-pod" secondAttribute="height" multiplier="50/667" id="kkz-nm-r0d"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ddE-Ow-rGh" secondAttribute="trailing" id="mxX-iA-s9z"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="K4r-xy-9P6">
+                        <barButtonItem key="leftBarButtonItem" image="ic_menu" style="plain" id="dll-O4-8Ai">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="contentView" destination="ddE-Ow-rGh" id="uX3-Ab-Vwy"/>
+                        <outlet property="loginButton" destination="OUf-MA-FXx" id="GBX-n5-olG"/>
+                        <outlet property="menuItem" destination="dll-O4-8Ai" id="DZn-2c-Yn5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SIP-PI-rJ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1828" y="124"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="e48-Wv-oUv">
+            <objects>
+                <viewController id="O1t-h0-Nyv" customClass="MenuViewController" customModule="FacebookLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xmG-ik-gVf"/>
+                        <viewControllerLayoutGuide type="bottom" id="ShM-OR-I4p"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hSV-S6-LVp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uNf-AV-2wM">
+                                <rect key="frame" x="19" y="87" width="242" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="242" id="3Um-Pt-MEr"/>
+                                    <constraint firstAttribute="height" constant="125" id="4Cj-QS-aeJ"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Thank you for downloading our Mini Module! Follow us on GitHub for more cool Mini Modules that will help you to make an awesome app a lot easier.</string>
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="6" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7q7-Vg-wHJ">
+                                <rect key="frame" x="32" y="280" width="54" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7q7-Vg-wHJ" secondAttribute="height" multiplier="1:1" id="fsS-3g-hF3"/>
+                                </constraints>
+                                <state key="normal" image="ic_facebook"/>
+                                <connections>
+                                    <action selector="facebookButtonPressed:" destination="O1t-h0-Nyv" eventType="touchUpInside" id="YJv-n9-Xo5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7L-om-8Vg">
+                                <rect key="frame" x="116" y="280" width="54" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="h7L-om-8Vg" secondAttribute="height" multiplier="1:1" id="ZkO-ph-T3v"/>
+                                </constraints>
+                                <state key="normal" image="ic_twitter"/>
+                                <connections>
+                                    <action selector="twitterButtonPressed:" destination="O1t-h0-Nyv" eventType="touchUpInside" id="6zg-6v-b9P"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMx-Q2-WM5">
+                                <rect key="frame" x="200" y="280" width="54" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="XMx-Q2-WM5" secondAttribute="height" multiplier="1:1" id="N8z-PS-H03"/>
+                                </constraints>
+                                <state key="normal" image="ic_github"/>
+                                <connections>
+                                    <action selector="githubButtonPressed:" destination="O1t-h0-Nyv" eventType="touchUpInside" id="5CA-gD-0A3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ub2-gm-lvZ">
+                                <rect key="frame" x="88" y="605" width="129" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="IkZ-PQ-Xpl"/>
+                                    <constraint firstAttribute="width" constant="129" id="deG-ly-HeD"/>
+                                </constraints>
+                                <state key="normal" image="img_romerock_logo"/>
+                                <connections>
+                                    <action selector="romerockButtonPressed:" destination="O1t-h0-Nyv" eventType="touchUpInside" id="ScJ-MZ-iti"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1647058824" green="0.18823529410000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ShM-OR-I4p" firstAttribute="top" secondItem="Ub2-gm-lvZ" secondAttribute="bottom" constant="42" id="Glc-RF-1Oc"/>
+                            <constraint firstItem="uNf-AV-2wM" firstAttribute="top" secondItem="xmG-ik-gVf" secondAttribute="bottom" constant="67" id="J7Y-9g-um2"/>
+                            <constraint firstItem="h7L-om-8Vg" firstAttribute="leading" secondItem="7q7-Vg-wHJ" secondAttribute="trailing" constant="30" id="LN9-hV-ulP"/>
+                            <constraint firstItem="7q7-Vg-wHJ" firstAttribute="top" secondItem="uNf-AV-2wM" secondAttribute="bottom" constant="68" id="NC9-2W-gLS"/>
+                            <constraint firstItem="XMx-Q2-WM5" firstAttribute="width" secondItem="XMx-Q2-WM5" secondAttribute="height" multiplier="1:1" id="Tcg-XI-M1i"/>
+                            <constraint firstItem="Ub2-gm-lvZ" firstAttribute="leading" secondItem="hSV-S6-LVp" secondAttribute="leading" constant="88" id="ZBY-nU-eHR"/>
+                            <constraint firstItem="XMx-Q2-WM5" firstAttribute="leading" secondItem="h7L-om-8Vg" secondAttribute="trailing" constant="30" id="caa-8X-Jxs"/>
+                            <constraint firstItem="h7L-om-8Vg" firstAttribute="centerY" secondItem="7q7-Vg-wHJ" secondAttribute="centerY" id="pVO-81-7Bz"/>
+                            <constraint firstItem="XMx-Q2-WM5" firstAttribute="centerY" secondItem="h7L-om-8Vg" secondAttribute="centerY" id="rKi-hM-HBx"/>
+                            <constraint firstItem="h7L-om-8Vg" firstAttribute="width" secondItem="h7L-om-8Vg" secondAttribute="height" multiplier="1:1" id="sC1-n9-foW"/>
+                            <constraint firstItem="7q7-Vg-wHJ" firstAttribute="leading" secondItem="hSV-S6-LVp" secondAttribute="leading" constant="32" id="v7Y-av-yKO"/>
+                            <constraint firstItem="uNf-AV-2wM" firstAttribute="leading" secondItem="hSV-S6-LVp" secondAttribute="leading" constant="19" id="ye3-LI-1wj"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SYZ-IG-tFc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="118" y="889"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_facebook" width="54" height="54"/>
+        <image name="ic_github" width="54" height="54"/>
+        <image name="ic_menu" width="16" height="15"/>
+        <image name="ic_twitter" width="54" height="54"/>
+        <image name="img_romerock_logo" width="130" height="20"/>
+        <image name="img_romerock_logo_gray" width="99" height="16"/>
+    </resources>
+</document>
