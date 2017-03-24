@@ -14,7 +14,6 @@
 		3FC54B601E70AFFC009D09CB /* CustomExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC54B5F1E70AFFC009D09CB /* CustomExtentions.swift */; };
 		3FC54B641E70B703009D09CB /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC54B631E70B703009D09CB /* SWRevealViewController.m */; };
 		3FC54B661E70B8C3009D09CB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC54B651E70B8C3009D09CB /* MenuViewController.swift */; };
-		3FC54B681E70BB24009D09CB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC54B671E70BB24009D09CB /* HomeViewController.swift */; };
 		3FC54B6C1E70CB7F009D09CB /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC54B6B1E70CB7F009D09CB /* FBSDKLoginKit.framework */; };
 		3FC54B6F1E70D795009D09CB /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC54B6D1E70D795009D09CB /* Bolts.framework */; };
 		3FC54B701E70D795009D09CB /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC54B6E1E70D795009D09CB /* FBSDKCoreKit.framework */; };
@@ -179,7 +178,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FC54B681E70BB24009D09CB /* HomeViewController.swift in Sources */,
 				3FC54B601E70AFFC009D09CB /* CustomExtentions.swift in Sources */,
 				3FC54B4C1E70A616009D09CB /* AppDelegate.swift in Sources */,
 				3FC54B641E70B703009D09CB /* SWRevealViewController.m in Sources */,
@@ -354,6 +352,7 @@
 				3FC54B5C1E70A616009D09CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
